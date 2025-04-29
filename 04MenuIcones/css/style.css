@@ -3,7 +3,6 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
 }
-
 h1 {
     margin: 0;
 }
@@ -22,8 +21,8 @@ ul li a {
     padding: 20px;
     text-decoration: none;
     color: #fff;
-    border: 1px solid transparent;
     transition: 300ms;
+    border: 1px solid transparent;
 }
 ul li a:hover {
     background: rgba(255,255,255,0.3);

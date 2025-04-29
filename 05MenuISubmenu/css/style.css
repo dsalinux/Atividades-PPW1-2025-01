@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    margin: 0;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #333;
+    color: #fff;
+    top: 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+.menu li {
+    display: inline-block;
+}
+.menu li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: 300ms;
+    border: 1px solid transparent;
+    position: relative;
+}
+.menu li a:hover {
+    background: rgba(255,255,255,0.3);
+    border-color:#fff;
+}
+.menu li ul {
+    position: absolute;
+    background: #333;
+    list-style: none;
+    padding: 0;
+    display: none;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+.menu li ul li {
+    display: block;
+}
+.menu li:hover > ul {
+    display: block;
+}
+.menu li ul li ul {
+    left: 100%;
+    top: 0;
+}
+.menu li ul li a {
+    min-width: 150px;
+}
+.caixa {
+    width: 200px;
+    height: 200px;
+    border: 3px solid red;
+    background: rgba(255, 255, 255, 0.7);
+    position: relative;
+}
+.caixinha {
+    width: 40px;
+    height: 40px;
+    border: 3px solid blue;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    right: 0%;
+    bottom: 50%;
+}
