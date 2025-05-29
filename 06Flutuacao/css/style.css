@@ -1,0 +1,17 @@
+body {
+    margin-bottom: 60px;
+}
+div {
+    background-color: aquamarine;
+}
+.float-1 img {
+    float: left;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px #aaa;
+    padding: 10px;
+    margin-right: 10px;
+}
+.clear-float {
+    clear: both;
+}
