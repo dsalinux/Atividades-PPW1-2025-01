@@ -1,0 +1,170 @@
+:root {
+    --bgcolor: #673ab7;
+}
+* {
+    box-sizing: border-box;
+}
+::selection {
+    background-color: var(--bgcolor);
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color:  var(--bgcolor);
+    color: white;
+}
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo img {
+    height: 80px;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+header nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.hero {
+    padding: 30px 0;
+    background-color: #f0f0f0;
+}
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+.hero h2 {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero p {
+    font-size: 1em;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero .btn {
+    display: block;
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    background-color:  var(--bgcolor);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+h2 {
+    font-size: 1.2em;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sobre, .servicos, .depoimentos, .contato {
+    background: #fff;
+    padding: 20px;
+    text-align: center; 
+}
+.servico-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.servico {
+    background: #efefef;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+}
+.contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contato form input, .contato form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contato form button {
+    width: 90%;
+    padding: 10px;
+    background-color:  var(--bgcolor);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contato form button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    background-color:  var(--bgcolor);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (min-width: 700px) {
+    
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        padding: 0 20px;
+    }
+
+    header nav ul {
+        flex-direction: row;
+    }
+
+    .hero .btn{
+        width: 250px;
+    }
+   
+    
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .servico-lista {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

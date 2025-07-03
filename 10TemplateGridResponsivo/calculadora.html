@@ -28,5 +28,16 @@
         <button class="zero">0</button>
         <button>.</button>
     </div>
+    <script>
+        document.querySelectorAll('button').forEach(function(btn){
+            btn.addEventListener('click', function() {
+                adicionarNumero(btn.innerHTML);
+            });
+        });
+        
+        function adicionarNumero(valor) {
+            document.querySelector('.display').innerHTML += valor;
+        }
+    </script>
 </body>
 </html>
